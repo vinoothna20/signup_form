@@ -1,18 +1,7 @@
 # Signup Form
 
 ## Project Overview
-This is a simple **Signup Form** created as part of my learning project. It includes basic form elements such as text inputs, radio buttons, checkboxes, and password fields. The form also uses **HTML5 browser validation** to ensure that users fill in the correct information before submission.
-
-### Features
-- **Form fields**:
-  - First Name and Last Name (Text inputs)
-  - Email Address (Text input with validation)
-  - Age (Number input with a minimum value)
-  - Password (Password input with validation for strength)
-  - Terms and Conditions (Checkbox with validation)
-- **Browser Validation**:
-  - HTML5 validation attributes such as `required`, `minlength`, `maxlength`, and `pattern`.
-  - Built-in validation for fields like email and password.
+This is a simple **Signup Form** created as part of my learning project. It includes basic form elements such as text inputs, checkboxes, and password fields. The form also uses **HTML5 browser validation** to ensure that users fill in the correct information before submission.
 
 ### What I Learned
 - **Different Types of Forms**:
