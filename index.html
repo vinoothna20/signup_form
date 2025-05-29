@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="banner">
+        <div class="form-cont" id="form-card">
+            <h1>PlayVerge</h1>
+            <h3>Come Let's Have Fun With Games</h3>
+            <form>
+                <div>
+                    <label for="firstName">First Name: </label>
+                    <input type="text" id="firstName" pattern="[A-Za-z]+"
+                    title="First name must contain only letters" required />
+                </div>
+                <div>
+                    <label for="lastName">Last Name: </label>
+                    <input type="text" id="lastName" pattern="[A-Za-z]+"
+                    title="Last name must contain only letters" required />
+                </div>
+                <div>
+                    <label for="mail">Email: </label>
+                    <input type="text" id="mail" name="mail" placeholder="Eg: me@gmail.com" pattern="[^@]+@[^@]+"
+                        title="Please enter a valid email id for example: me@gmail.com" required />
+                </div>
+                <div>
+                    <label for="age">Age: </label>
+                    <input type="number" id="age" name="age" min="15" required />
+                </div>
+                <div>
+                    <label for="pswd">Password: </label>
+                    <input type="password" id="pswd" minlength="5" maxlength="10"
+                        pattern="(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d@$!%*?&]{5,10}"
+                        title="Password must be 5–10 characters long and include at least one letter and one number"
+                        required />
+                </div>
+                <div id="tc-cont">
+                    <input type="checkbox" name="agreeTC" required> &nbsp;&nbsp;
+                    <span>I agree to the&nbsp;<a href="#" id="terms-link">terms and conditions</a></span>
+                </div>
+                <div>
+                    <input type="submit" value="Sign Up">
+                </div>
+            </form>
+            <p>Already have an account? <span id="login-link">Log In</span></p>
+        </div>
+
+        <div class="terms-cont" id="terms-card">
+            <h1>Terms and Conditions</h1>
+            <p>There are no conditions... Just enjoy the games and have fun 😉</p>
+            <p><a href="#" id="form-link">Go back</a></p>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
